@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strawhats — Architecting Next-Gen Software & AI Infrastructure</title>
+  <meta name="description" content="Strawhats is a flagship software engineering firm building high-performance AI infrastructure, cloud-native web applications, and cyber-resilient systems." />
+  <meta name="keywords" content="Software Engineering, AI Systems, Cloud Architecture, Next-Gen Web, Cybersecurity, High Frequency Backend" />
+  <meta name="author" content="Strawhats Engineering" />
+  
+  <!-- Favicon / Theme -->
+  <meta name="theme-color" content="#05050A" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+
+  <!-- CDN Libraries (GSAP, ScrollTrigger, Lenis, SplitType) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+  <script src="https://unpkg.com/split-type" defer></script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- 0-100% Preloader -->
+  <div class="preloader" role="status" aria-label="Loading Website">
+    <div class="preloader-content">
+      <div class="preloader-logo">STRAWHATS</div>
+      <div class="preloader-counter">0%</div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. HEADER / NAVIGATION -->
+  <header class="navbar" role="banner">
+    <a href="#hero" class="nav-brand" aria-label="Strawhats Home">
+      <div class="nav-brand-logo">S</div>
+      <span>Strawhats</span>
+    </a>
+    <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#solutions" class="nav-link">Solutions</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="magnetic-wrap">
+        <a href="#contact" class="btn btn-primary">
+          <span>Build With Us</span>
+          <span class="btn-icon">→</span>
+        </a>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION -->
+    <section id="hero" class="hero-section container" aria-labelledby="hero-title">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge reveal-up">
+            <span class="badge-dot"></span>
+            <span>Flagship Software Architecture v4.0</span>
+          </div>
+          <h1 id="hero-title" class="hero-title">
+            Architecting the <span class="hero-title-gradient">Next Era</span> of Digital Intelligence.
+          </h1>
+          <p class="hero-subtitle reveal-up">
+            We engineer mission-critical AI systems, ultra-low latency distributed cloud architectures, and quantum-ready software platforms for Fortune 500s and high-growth industry disruptors.
+          </p>
+          <div class="hero-cta-group reveal-up">
+            <div class="magnetic-wrap">
+              <a href="#contact" class="btn btn-primary">
+                <span>Start Engineering Project</span>
+                <span class="btn-icon">→</span>
+              </a>
+            </div>
+            <div class="magnetic-wrap">
+              <a href="#services" class="btn btn-secondary">
+                <span>Explore Capabilities</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrapper floating-element">
+            <img src="assets/images/hero-abstract.png" alt="Futuristic 3D Glassmorphic Torus Orb" class="hero-image" loading="eager" />
+            <div class="hero-floating-badge badge-1">
+              <div class="badge-icon">⚡</div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.95rem;">Sub-Millisecond</div>
+                <div style="font-size: 0.8rem; color: #94a3b8;">High-Frequency Engine</div>
+              </div>
+            </div>
+            <div class="hero-floating-badge badge-2">
+              <div class="badge-icon">🧠</div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.95rem;">Autonomous AI</div>
+                <div style="font-size: 0.8rem; color: #94a3b8;">Neural Compute Ready</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section id="about" class="about-section container" aria-labelledby="about-title">
+      <div class="section-header text-center">
+        <div class="badge">Who We Are</div>
+        <h2 id="about-title" class="section-title">Engineering Excellence Without Compromise.</h2>
+        <p class="section-subtitle">
+          Founded by principal systems architects and machine learning scientists, Strawhats bridges the gap between theoretical research and rock-solid enterprise execution.
+        </p>
+      </div>
+      <div class="about-stats-grid">
+        <div class="glass-card stat-card reveal-up">
+          <div class="stat-number counter-number" data-target="99.99" data-suffix="%">0%</div>
+          <div class="stat-label">System Uptime Guarantee</div>
+        </div>
+        <div class="glass-card stat-card reveal-up">
+          <div class="stat-number counter-number" data-target="2.4" data-prefix="$" data-suffix="B+">0</div>
+          <div class="stat-label">Client Valuation Created</div>
+        </div>
+        <div class="glass-card stat-card reveal-up">
+          <div class="stat-number counter-number" data-target="180" data-suffix="+">0</div>
+          <div class="stat-label">Principal Engineers</div>
+        </div>
+        <div class="glass-card stat-card reveal-up">
+          <div class="stat-number counter-number" data-target="12" data-suffix="ms">0</div>
+          <div class="stat-label">Global API P99 Latency</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION -->
+    <section id="services" class="services-section container" aria-labelledby="services-title">
+      <div class="section-header">
+        <div class="badge">Capabilities</div>
+        <h2 id="services-title" class="section-title">Full-Spectrum Core Systems Engineering.</h2>
+        <p class="section-subtitle">
+          From hardware-accelerated algorithms to seamless front-end interfaces, we deliver resilient software components tailored to your exact demands.
+        </p>
+      </div>
+      <div class="grid-2">
+        <div class="glass-card service-card reveal-up">
+          <div>
+            <div class="service-icon">🌐</div>
+            <h3 class="service-title">Website Development</h3>
+            <p class="service-desc">Your website deserves the best, after all it is the internet advertising billboard for you and your company.</p>
+          </div>
+          <a href="#contact" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Build Website →</a>
+        </div>
+        <div class="glass-card service-card reveal-up">
+          <div>
+            <div class="service-icon">📱</div>
+            <h3 class="service-title">Mobile Application</h3>
+            <p class="service-desc">The relationships between the apps that user has installed on their phone will become exponentially more important, to both the consumer and the businesses themselves.</p>
+          </div>
+          <a href="#contact" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Develop App →</a>
+        </div>
+        <div class="glass-card service-card reveal-up">
+          <div>
+            <div class="service-icon">💻</div>
+            <h3 class="service-title">Desktop Application</h3>
+            <p class="service-desc">A stand alone Application in a desktop or laptop computer for Business Management.</p>
+          </div>
+          <a href="#contact" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Build Desktop Software →</a>
+        </div>
+        <div class="glass-card service-card reveal-up">
+          <div>
+            <div class="service-icon">📈</div>
+            <h3 class="service-title">Digital Marketing</h3>
+            <p class="service-desc">Marketing is not the art of finding clever way to dispose what you make, Its a art of creating genuine customer value.</p>
+          </div>
+          <a href="#contact" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Grow Your Brand →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SOLUTIONS SECTION -->
+    <section id="solutions" class="solutions-section container" aria-labelledby="solutions-title">
+      <div class="section-header">
+        <div class="badge">Tailored Solutions</div>
+        <h2 id="solutions-title" class="section-title">Architected for Every Stage of Scale.</h2>
+      </div>
+      <div class="solution-showcase">
+        <div class="solution-tabs">
+          <div class="solution-tab active" data-tab="sol-enterprise">
+            <div class="solution-tab-title"><span>Enterprise Modernization</span> <span>→</span></div>
+            <p style="color: #94a3b8; font-size: 0.9rem;">Migrate legacy monoliths into elastic cloud architectures with zero disruption.</p>
+          </div>
+          <div class="solution-tab" data-tab="sol-scaleup">
+            <div class="solution-tab-title"><span>Hyper-Growth Scaleup</span> <span>→</span></div>
+            <p style="color: #94a3b8; font-size: 0.9rem;">Eliminate database bottlenecks and handle 100x user spikes effortlessly.</p>
+          </div>
+          <div class="solution-tab" data-tab="sol-ai">
+            <div class="solution-tab-title"><span>Turnkey AI Platform</span> <span>→</span></div>
+            <p style="color: #94a3b8; font-size: 0.9rem;">Integrate autonomous AI agents and intelligent data analytics into your software.</p>
+          </div>
+        </div>
+        <div>
+          <div id="sol-enterprise" class="glass-card solution-display blur-reveal">
+            <img src="assets/images/cyber-grid.png" alt="Enterprise Quantum Security Architecture" style="border-radius: var(--radius-md); margin-bottom: 1.5rem;" />
+            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">Enterprise-Grade Resiliency</h3>
+            <p style="color: #94a3b8; line-height: 1.6;">We architect redundant active-active multi-cloud topologies ensuring business continuity, stringent regulatory compliance, and sub-second disaster recovery failover across global zones.</p>
+          </div>
+          <div id="sol-scaleup" class="glass-card solution-display" style="display: none;">
+            <img src="assets/images/platform-ui.png" alt="Scaleup Analytics UI" style="border-radius: var(--radius-md); margin-bottom: 1.5rem;" />
+            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">Infinite Scale Engine</h3>
+            <p style="color: #94a3b8; line-height: 1.6;">Designed for fast-growing technology companies experiencing exponential traffic. Our event-driven sharding architecture guarantees low latency under peak concurrent loads.</p>
+          </div>
+          <div id="sol-ai" class="glass-card solution-display" style="display: none;">
+            <img src="assets/images/hero-abstract.png" alt="AI Platform Core" style="border-radius: var(--radius-md); margin-bottom: 1.5rem;" />
+            <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">Cognitive Intelligence Stack</h3>
+            <p style="color: #94a3b8; line-height: 1.6;">Embed proprietary LLMs directly within your enterprise boundary. Complete data privacy, custom semantic search pipelines, and autonomous decision agents.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. INDUSTRIES SECTION -->
+    <section id="industries" class="industries-section container" aria-labelledby="industries-title">
+      <div class="section-header text-center">
+        <div class="badge">Domain Expertise</div>
+        <h2 id="industries-title" class="section-title">Powering Verticals That Shape the Future.</h2>
+      </div>
+      <div class="grid-3">
+        <div class="glass-card reveal-up">
+          <span class="industry-tag">FinTech & Trading</span>
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem;">High-Frequency Financial Systems</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem;">Ultra-low latency matching engines, algorithmic trading gateways, and secure institutional asset custody platforms.</p>
+        </div>
+        <div class="glass-card reveal-up">
+          <span class="industry-tag">HealthTech & Bio</span>
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem;">Genomic & Telehealth AI</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem;">HIPAA-compliant diagnostic machine learning models, real-time biometric telemetry, and electronic health record interoperability.</p>
+        </div>
+        <div class="glass-card reveal-up">
+          <span class="industry-tag">Autonomous Systems</span>
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem;">Robotics & IoT Edge Fleet</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem;">Over-the-air firmware update orchestration, edge neural processing units, and real-time sensor fusion telemetry pipelines.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DEVELOPMENT PROCESS (STICKY SCROLL) -->
+    <section id="process" class="process-section container" aria-labelledby="process-title">
+      <div class="section-header">
+        <div class="badge">Methodology</div>
+        <h2 id="process-title" class="section-title">The Blueprint to Precision Engineering.</h2>
+        <p class="section-subtitle">A deterministic, transparent engineering lifecycle designed to eliminate technical debt before a single line of production code is compiled.</p>
+      </div>
+      <div class="process-list">
+        <div class="process-step">
+          <div class="process-step-num">01</div>
+          <div>
+            <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 0.75rem;">Discovery & Architectural Simulation</h3>
+            <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.6;">Before writing code, our principal architects build comprehensive threat models, database schematics, and load simulation benchmarks to validate structural assumptions.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">02</div>
+          <div>
+            <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 0.75rem;">Agile Sprint Engineering</h3>
+            <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.6;">Our dedicated senior engineering squads iterate in 2-week sprints with 100% test coverage requirements, peer code reviews, and automated security scanning.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">03</div>
+          <div>
+            <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 0.75rem;">Rigorous QA & Chaos Stress Audit</h3>
+            <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.6;">We deliberately inject network latency, server outages, and adversarial cyber probes to verify that your platform automatically recovers under catastrophic failures.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">04</div>
+          <div>
+            <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 0.75rem;">Continuous Deployment & Hyper-Scale</h3>
+            <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.6;">Blue-green production rollouts across global edge clusters with real-time anomaly detection telemetry and 24/7 dedicated site reliability support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio-section container" aria-labelledby="portfolio-title">
+      <div class="section-header">
+        <div class="badge">Featured Works</div>
+        <h2 id="portfolio-title" class="section-title">Systems Engineered for Global Scale.</h2>
+      </div>
+      <div class="grid-3">
+        <div class="glass-card reveal-up" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="portfolio-logo-box">
+              <img src="assets/images/clients/icube.png" alt="Icube Office Solutions" class="portfolio-logo-img" loading="lazy" />
+            </div>
+            <span class="industry-tag">Office Solutions</span>
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem;">Icube Office Solutions</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 1.5rem;">Enterprise office solutions and corporate infrastructure portal.</p>
+          </div>
+          <a href="http://www.icubeofficesolutions.com/" target="_blank" rel="noopener" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Visit Project →</a>
+        </div>
+        <div class="glass-card reveal-up" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="portfolio-logo-box">
+              <img src="assets/images/clients/graphicjam.png" alt="Graphicjam Media Agency" class="portfolio-logo-img" loading="lazy" />
+            </div>
+            <span class="industry-tag">Media Agency</span>
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem;">Graphicjam Media Agency</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 1.5rem;">Full-scale creative branding and media agency web platform.</p>
+          </div>
+          <a href="http://www.graphicjam.in/" target="_blank" rel="noopener" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Visit Project →</a>
+        </div>
+        <div class="glass-card reveal-up" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="portfolio-logo-box">
+              <img src="assets/images/clients/jobcenter.png" alt="Jobcenter Portal" class="portfolio-logo-img" loading="lazy" />
+            </div>
+            <span class="industry-tag">Employment Portal</span>
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem;">Jobcenter</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 1.5rem;">Advanced career matchmaking and corporate employment portal.</p>
+          </div>
+          <a href="https://jobcenter.co.in/" target="_blank" rel="noopener" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Visit Project →</a>
+        </div>
+        <div class="glass-card reveal-up" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="portfolio-logo-box">
+              <img src="assets/images/clients/ycaviation.png" alt="YC Aviation" class="portfolio-logo-img" loading="lazy" />
+            </div>
+            <span class="industry-tag">Aviation Services</span>
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem;">YC Aviation</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 1.5rem;">Aviation training, consultancy, and flight charter platform.</p>
+          </div>
+          <a href="https://ycaviation.in/" target="_blank" rel="noopener" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Visit Project →</a>
+        </div>
+        <div class="glass-card reveal-up" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="portfolio-logo-box">
+              <img src="assets/images/clients/anbhimnath.png" alt="A N Bhimnath Textiles" class="portfolio-logo-img" loading="lazy" />
+            </div>
+            <span class="industry-tag">Textile Manufacturing</span>
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem;">A N Bhimnath</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 1.5rem;">Industrial textiles and corporate manufacturing catalog system.</p>
+          </div>
+          <a href="http://anbhimnath.in/" target="_blank" rel="noopener" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Visit Project →</a>
+        </div>
+        <div class="glass-card reveal-up" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="portfolio-logo-box">
+              <img src="assets/images/clients/shriconsultant.png" alt="Shri Consultant" class="portfolio-logo-img" loading="lazy" />
+            </div>
+            <span class="industry-tag">Corporate Consulting</span>
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem;">Shri Consultant</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 1.5rem;">Financial, legal, and enterprise management consulting portal.</p>
+          </div>
+          <a href="https://shriconsultant.in/" target="_blank" rel="noopener" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Visit Project →</a>
+        </div>
+        <div class="glass-card reveal-up" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="portfolio-logo-box">
+              <img src="assets/images/clients/praj.png" alt="Praj Engineering" class="portfolio-logo-img" loading="lazy" />
+            </div>
+            <span class="industry-tag">Industrial Engineering</span>
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem;">Praj</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 1.5rem;">Global industrial biotech and process engineering corporate web platform.</p>
+          </div>
+          <a href="https://praj.net/" target="_blank" rel="noopener" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Visit Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. TECHNOLOGY STACK (INFINITE MARQUEE) -->
+    <section id="stack" class="tech-section" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge">Ecosystem</div>
+          <h2 id="stack-title" class="section-title">Our Hardened Technology Arsenal.</h2>
+        </div>
+      </div>
+      <div class="marquee-wrapper" aria-hidden="true">
+        <div class="marquee-content">
+          <div class="tech-item"><span>⚛️</span> React / Next.js 15</div>
+          <div class="tech-item"><span>🐍</span> Python / FastAPI</div>
+          <div class="tech-item"><span>🐹</span> Go (Golang)</div>
+          <div class="tech-item"><span>🦀</span> Rust High-Performance</div>
+          <div class="tech-item"><span>☸️</span> Kubernetes / Helm</div>
+          <div class="tech-item"><span>☁️</span> AWS Cloud Native</div>
+          <div class="tech-item"><span>🧠</span> PyTorch / CUDA</div>
+          <div class="tech-item"><span>🐳</span> Docker Containers</div>
+          <div class="tech-item"><span>⚡</span> WebAssembly (Wasm)</div>
+          <div class="tech-item"><span>📊</span> PostgreSQL / Timescale</div>
+        </div>
+        <div class="marquee-content">
+          <div class="tech-item"><span>⚛️</span> React / Next.js 15</div>
+          <div class="tech-item"><span>🐍</span> Python / FastAPI</div>
+          <div class="tech-item"><span>🐹</span> Go (Golang)</div>
+          <div class="tech-item"><span>🦀</span> Rust High-Performance</div>
+          <div class="tech-item"><span>☸️</span> Kubernetes / Helm</div>
+          <div class="tech-item"><span>☁️</span> AWS Cloud Native</div>
+          <div class="tech-item"><span>🧠</span> PyTorch / CUDA</div>
+          <div class="tech-item"><span>🐳</span> Docker Containers</div>
+          <div class="tech-item"><span>⚡</span> WebAssembly (Wasm)</div>
+          <div class="tech-item"><span>📊</span> PostgreSQL / Timescale</div>
+        </div>
+      </div>
+      <div class="marquee-wrapper" aria-hidden="true">
+        <div class="marquee-content reverse">
+          <div class="tech-item"><span>🔍</span> ElasticSearch / Vector</div>
+          <div class="tech-item"><span>🛡️</span> HashiCorp Vault / Terraform</div>
+          <div class="tech-item"><span>⚡</span> Apache Kafka / Redis</div>
+          <div class="tech-item"><span>🌐</span> GraphQL Enterprise</div>
+          <div class="tech-item"><span>🔒</span> Zero-Trust Architecture</div>
+          <div class="tech-item"><span>📈</span> Grafana / Prometheus</div>
+          <div class="tech-item"><span>🤖</span> LangChain / OpenAI LLMs</div>
+        </div>
+        <div class="marquee-content reverse">
+          <div class="tech-item"><span>🔍</span> ElasticSearch / Vector</div>
+          <div class="tech-item"><span>🛡️</span> HashiCorp Vault / Terraform</div>
+          <div class="tech-item"><span>⚡</span> Apache Kafka / Redis</div>
+          <div class="tech-item"><span>🌐</span> GraphQL Enterprise</div>
+          <div class="tech-item"><span>🔒</span> Zero-Trust Architecture</div>
+          <div class="tech-item"><span>📈</span> Grafana / Prometheus</div>
+          <div class="tech-item"><span>🤖</span> LangChain / OpenAI LLMs</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15. CONTACT SECTION -->
+    <section id="contact" class="contact-section container" aria-labelledby="contact-title">
+      <div class="glass-card blur-reveal" style="max-width: 900px; margin: 0 auto; padding: 4rem;">
+        <div class="section-header text-center">
+          <div class="badge">Let's Build Together</div>
+          <h2 id="contact-title" class="section-title">Initiate Your Next Architecture.</h2>
+          <p class="section-subtitle">Connect with our principal engineering team to receive a confidential technical architecture assessment.</p>
+        </div>
+        <div class="grid-3" style="margin-bottom: 1.5rem;">
+          <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-light); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📞</div>
+            <div style="font-weight: 700; margin-bottom: 0.25rem;">Phone Numbers</div>
+            <div style="color: #94a3b8; font-size: 0.88rem; font-family: var(--font-mono);">+91 95957 49597<br>+91 96575 53914<br>+91 77209 39337</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-light); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">✉️</div>
+            <div style="font-weight: 700; margin-bottom: 0.25rem;">Email Contact</div>
+            <div style="color: var(--accent-cyan); font-size: 0.95rem; font-family: var(--font-mono); margin-top: 0.5rem;"><a href="mailto:contact@strawhats.in">contact@strawhats.in</a></div>
+          </div>
+          <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-light); padding: 1.5rem; border-radius: var(--radius-md); text-align: center;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📍</div>
+            <div style="font-weight: 700; margin-bottom: 0.25rem;">Headquarters</div>
+            <div style="color: #94a3b8; font-size: 0.9rem; margin-top: 0.5rem;">Solapur, Maharashtra,<br>India</div>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input id="name" type="text" class="form-input" placeholder="Elon Musk" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Enterprise Email</label>
+              <input id="email" type="email" class="form-input" placeholder="elon@enterprise.ai" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="project-type" class="form-label">System Architecture Scope</label>
+            <select id="project-type" class="form-input" required style="background-color: var(--bg-tertiary);">
+              <option value="AI Infrastructure">AI & ML Core Infrastructure</option>
+              <option value="High-Frequency Web">High-Frequency Web Application</option>
+              <option value="Cloud Migration">Enterprise Cloud Architecture</option>
+              <option value="Quantum Security">Quantum Cybersecurity Grid</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Technical Objectives & Requirements</label>
+            <textarea id="message" rows="4" class="form-input" placeholder="Describe current architectural bottlenecks or future scale requirements..." required></textarea>
+          </div>
+          <div class="magnetic-wrap" style="width: 100%;">
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05rem;">
+              <span>Submit Architecture Request →</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- 16. FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#hero" class="nav-brand" style="margin-bottom: 1rem; display: inline-flex;">
+            <div class="nav-brand-logo">S</div>
+            <span>Strawhats Engineering</span>
+          </a>
+          <p style="color: #94a3b8; font-size: 0.95rem; max-width: 340px; line-height: 1.6;">
+            Flagship software architecture and AI infrastructure firm. Engineered with pure standards for uncompromising speed and security.
+          </p>
+        </div>
+        <div>
+          <div style="font-weight: 700; margin-bottom: 1.25rem; color: #fff;">Navigation</div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; color: #94a3b8;">
+            <a href="#about">About Engineering</a>
+            <a href="#services">Core Capabilities</a>
+            <a href="#solutions">Tailored Solutions</a>
+            <a href="#portfolio">Featured Systems</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-weight: 700; margin-bottom: 1.25rem; color: #fff;">Contact Us</div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; color: #94a3b8; font-size: 0.9rem;">
+            <div>📍 Solapur, Maharashtra, India</div>
+            <div>✉️ <a href="mailto:contact@strawhats.in" style="color: var(--accent-cyan);">contact@strawhats.in</a></div>
+            <div>📞 +91 95957 49597</div>
+            <div>📞 +91 96575 53914</div>
+          </div>
+        </div>
+        <div>
+          <div style="font-weight: 700; margin-bottom: 1.25rem; color: #fff;">Connect</div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; color: #94a3b8;">
+            <a href="#">GitHub Organization</a>
+            <a href="#">X / Twitter Engineering</a>
+            <a href="#">LinkedIn Network</a>
+            <a href="#">Security Hall of Fame</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Strawhats Software Engineering Inc. All rights reserved. Built with pure HTML5/CSS3/Vanilla JS.</div>
+        <div>Privacy Policy • SOC2 Compliance • Terms of Engineering</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Module Entry Point -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* ==========================================================================
+   DESIGN SYSTEM TOKENS (VARIABLES.CSS)
+   Apple + Stripe + Linear Inspired Dark Glassmorphism Theme
+   ========================================================================== */
+
+:root {
+  /* Colors - Base & Backgrounds */
+  --bg-primary: #05050a;
+  --bg-secondary: #0a0a14;
+  --bg-tertiary: #121222;
+  --bg-surface: rgba(255, 255, 255, 0.03);
+  --bg-surface-hover: rgba(255, 255, 255, 0.06);
+  --bg-glass: rgba(18, 18, 34, 0.65);
+  
+  /* Colors - Accents & Gradients */
+  --accent-violet: #6e56cf;
+  --accent-cyan: #00d8ff;
+  --accent-pink: #ff2e93;
+  --accent-orange: #ff8a00;
+  --accent-green: #00f59b;
+  
+  --gradient-linear: linear-gradient(135deg, var(--accent-violet) 0%, var(--accent-cyan) 100%);
+  --gradient-solar: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-orange) 100%);
+  --gradient-cyber: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-green) 100%);
+  --gradient-text: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.6) 100%);
+  --gradient-text-accent: linear-gradient(135deg, #ffffff 30%, var(--accent-cyan) 100%);
+
+  /* Borders & Glassmorphism */
+  --border-light: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.15);
+  --border-glow: rgba(0, 216, 255, 0.4);
+  
+  /* Typography */
+  --font-primary: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Shadows & Glows */
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 10px 35px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.85);
+  --glow-violet: 0 0 50px rgba(110, 86, 207, 0.35);
+  --glow-cyan: 0 0 50px rgba(0, 216, 255, 0.35);
+  
+  /* Layout & Sizing */
+  --container-max: 1320px;
+  --container-padding: 2rem;
+  --header-height: 80px;
+  
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+  
+  /* Transitions & Physics */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1.25rem;
+    --header-height: 70px;
+  }
+}
