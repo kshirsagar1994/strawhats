@@ -56,7 +56,10 @@ export function initLoader() {
         scale: 0.88,
         filter: 'blur(20px)',
         duration: 1.4,
-        ease: 'power3.out'
+        ease: 'power3.out',
+        onComplete: () => {
+          if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
+        }
       }, '-=1.0');
     } else {
       preloader.style.opacity = '0';

@@ -120,4 +120,9 @@ export function initAnimations() {
       }
     });
   });
+
+  // 7. Refresh ScrollTrigger to ensure all trigger positions are accurate after layout
+  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 500);
 }

@@ -221,7 +221,7 @@
 /* Section Header Structure */
 .section-header {
   max-width: 760px;
-  margin-bottom: 1rem;
+  margin-bottom: 3.5rem;
 }
 
 .section-header.text-center {
@@ -239,6 +239,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.15rem;
+}
+
+/* Ensure SplitType child characters and words inherit background clipping and don't render invisible */
+.section-title .word,
+.section-title .char {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .section-subtitle {
@@ -294,6 +303,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+.grid-2 > *, .grid-3 > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (max-width: 992px) {

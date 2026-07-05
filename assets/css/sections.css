@@ -380,7 +380,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
 }
 
 .solution-tabs {
@@ -461,7 +461,7 @@
   display: grid;
   grid-template-columns: 0.3fr 1fr;
   gap: 2rem;
-  align-items: center;
+  align-items: start;
 }
 
 .process-step-num {
