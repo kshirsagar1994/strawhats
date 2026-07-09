@@ -30,6 +30,10 @@ Engineered with uncompromising visual excellence and sub-second load times, the 
 ```text
 d:\Projects\strawhats\
 ├── index.html                  # Main semantic HTML5 structure & SEO metadata
+├── server.js                   # Node.js/Express Backend Server & SQLite DB setup
+├── package.json                # Project dependencies (express, cors, sqlite3)
+├── .gitignore                  # Git exclusion rules
+├── database.sqlite             # Local SQLite database for form submissions (auto-generated)
 ├── PROJECT_REPORT.md           # Comprehensive Technical Project Report
 ├── README.md                   # Project Overview & Quick Start Guide
 └── assets/
@@ -52,23 +56,20 @@ d:\Projects\strawhats\
 
 ## 🛠️ Quick Start & Local Development
 
-Because this project uses native web standards, you can run it locally with zero dependency installation or bundling required.
+This project uses native web standards for the frontend and a lightweight **Node.js + Express** backend with **SQLite** for handling API logic and database persistence.
 
-### 1. Using Python (Recommended)
+### Running the Full Application
 ```bash
-# Navigate to the project directory
+# 1. Navigate to the project directory
 cd d:\Projects\strawhats
 
-# Start the built-in HTTP server on port 8000
-python -m http.server 8000
-```
-Open your browser and visit: **http://localhost:8000**
+# 2. Install backend dependencies
+npm install
 
-### 2. Using Node.js / npx
-```bash
-# Start a lightweight Node HTTP server
-npx -y http-server -p 8000
+# 3. Start the Node.js server
+npm start
 ```
+Open your browser and visit: **http://localhost:3000**
 
 ---
 
