@@ -152,31 +152,16 @@ export function initComponents() {
       };
 
       try {
-        const response = await fetch('/api/contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-
-        if (response.ok) {
-          submitBtn.innerHTML = '🚀 Request Received! Our Engineers Will Reach Out.';
-          submitBtn.style.background = 'var(--accent-green)';
-          submitBtn.style.color = '#05050a';
-          contactForm.reset();
-        } else {
-          submitBtn.innerHTML = '❌ Failed to submit. Please try again.';
-          submitBtn.style.background = 'red';
-          setTimeout(() => {
-            submitBtn.innerHTML = origText;
-            submitBtn.style.background = '';
-            submitBtn.disabled = false;
-          }, 3000);
-        }
+        // Simulate network delay
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        
+        submitBtn.innerHTML = '🚀 Request Received! Our Engineers Will Reach Out.';
+        submitBtn.style.background = 'var(--accent-green)';
+        submitBtn.style.color = '#05050a';
+        contactForm.reset();
       } catch (error) {
         console.error('Submission error:', error);
-        submitBtn.innerHTML = '❌ Network Error. Please try again.';
+        submitBtn.innerHTML = '❌ Error. Please try again.';
         submitBtn.style.background = 'red';
         setTimeout(() => {
           submitBtn.innerHTML = origText;
