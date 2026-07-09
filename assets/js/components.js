@@ -134,22 +134,56 @@ export function initComponents() {
     });
   }
 
-  // 6. Contact Form Simulation
+  // 6. Contact Form Backend Integration
   const contactForm = document.querySelector('#contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const origText = submitBtn.innerHTML;
       submitBtn.innerHTML = '✨ Sending Architecture Request...';
       submitBtn.disabled = true;
 
-      setTimeout(() => {
-        submitBtn.innerHTML = '🚀 Request Received! Our Engineers Will Reach Out.';
-        submitBtn.style.background = 'var(--accent-green)';
-        submitBtn.style.color = '#05050a';
-        contactForm.reset();
-      }, 1500);
+      const formData = {
+        name: document.querySelector('#name').value,
+        email: document.querySelector('#email').value,
+        'project-type': document.querySelector('#project-type').value,
+        message: document.querySelector('#message').value
+      };
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+          submitBtn.innerHTML = '🚀 Request Received! Our Engineers Will Reach Out.';
+          submitBtn.style.background = 'var(--accent-green)';
+          submitBtn.style.color = '#05050a';
+          contactForm.reset();
+        } else {
+          submitBtn.innerHTML = '❌ Failed to submit. Please try again.';
+          submitBtn.style.background = 'red';
+          setTimeout(() => {
+            submitBtn.innerHTML = origText;
+            submitBtn.style.background = '';
+            submitBtn.disabled = false;
+          }, 3000);
+        }
+      } catch (error) {
+        console.error('Submission error:', error);
+        submitBtn.innerHTML = '❌ Network Error. Please try again.';
+        submitBtn.style.background = 'red';
+        setTimeout(() => {
+          submitBtn.innerHTML = origText;
+          submitBtn.style.background = '';
+          submitBtn.disabled = false;
+        }, 3000);
+      }
     });
   }
 }
